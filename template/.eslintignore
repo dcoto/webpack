@@ -2,6 +2,6 @@
 /config/
 /dist/
 /*.js
-{{#unit}}
-/test/unit/coverage/
-{{/unit}}
+{{#if_or unit e2e}}
+coverage/
+{{/if_or}}

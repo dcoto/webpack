@@ -51,14 +51,6 @@ This directory is an escape hatch for static assets that you do not want to proc
 
 See [Handling Static Assets](static.md) for more details.
 
-### `test/unit`
-
-Contains unit test related files. See [Unit Testing](unit.md) for more details.
-
-### `test/e2e`
-
-Contains e2e test related files. See [End-to-end Testing](e2e.md) for more details.
-
 ### `index.html`
 
 This is the **template** `index.html` for our single page application. During development and builds, Webpack will generate assets, and the URLs for those generated assets will be automatically injected into this template to render the final HTML.
