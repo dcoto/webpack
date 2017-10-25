@@ -76,7 +76,7 @@ module.exports = {
     },
     "e2e": {
       "type": "confirm",
-      "message": "Setup e2e tests with Navalia?"
+      "message": "Setup e2e tests with Puppeteer and Jest?"
     }
   },
   "filters": {

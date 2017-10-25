@@ -29,4 +29,4 @@ All build commands are executed via [NPM Scripts](https://docs.npmjs.com/misc/sc
 
 ### `npm run e2e`
 
-> Runs End-to-end tests with [Jest](https://facebook.github.io/jest/) +  [Navalia](https://github.com/joelgriffith/navalia).
+> Runs End-to-end tests with [Jest](https://facebook.github.io/jest/) +  [Puppeteer](https://github.com/GoogleChrome/puppeteer).

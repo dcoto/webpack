@@ -1,22 +1,23 @@
-const { Chrome } = require('navalia');
-const pageUrl = 'https://www.google.com/';
+const puppeteer = require('puppeteer');
+const pageUrl = 'http://www.localhost:8081/';
 
 describe('My Page', () => {
-  let chrome = {};
+  let browser = {};
   
   // Setup a clean instance for each test
-  beforeEach(() => {
-    chrome = new Chrome();
+  beforeEach(async () => {
+     browser = await puppeteer.launch();
   });
   
   // Tear down for each test
   afterEach(() => {
-    return chrome.done();
+    return browser.close();
   });
 
-  it('should have a username input', () => {
-    return chrome.goto(pageUrl)
-      .then(() => chrome.exists('title'))
-      .then((exists) => expect(exists).toEqual(true));
+  it('should have a valid title', async () => {
+    const page = await browser.newPage();
+    await page.goto(pageUrl);
+    const title = await page.title();
+    expect(title).toEqual('{{name}}');
   });
 });

@@ -11,7 +11,7 @@
     "test": "jest"{{/if_or}}{{#unit}},
     "unit": "jest src"{{/unit}}{{#e2e}},
     "e2e": "jest e2e"{{/e2e}}{{#lint}},
-    "lint": "eslint --ext .js,.vue src{{#unit}} test/unit/specs{{/unit}}{{#e2e}} test/e2e/specs{{/e2e}}"{{/lint}}
+    "lint": "eslint --ext .js,.vue src{{#e2e}} e2e{{/e2e}}"{{/lint}}
   },{{#unit}}
   "jest": {
     "moduleFileExtensions": [
@@ -83,7 +83,7 @@
     "babel-jest": "^21.2.0",
     {{/unit}}
     {{#e2e}}
-    "navalia": "^1.2.0",
+    "puppeteer": "^0.12.0",
     {{/e2e}}
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",

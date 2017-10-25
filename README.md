@@ -44,7 +44,7 @@ The development server will run on port 8080 by default. If that port is already
   - Supports all webpack loaders.
   - Easy mock injection.
 
-- `npm run e2e`: End-to-end tests with [Jest](https://facebook.github.io/jest/) +  [Navalia](https://github.com/joelgriffith/navalia).
+- `npm run e2e`: End-to-end tests with [Jest](https://facebook.github.io/jest/) +  [Puppeteer](https://github.com/GoogleChrome/puppeteer).
 
 
 ### Fork It And Make Your Own
