@@ -23,17 +23,10 @@ All build commands are executed via [NPM Scripts](https://docs.npmjs.com/misc/sc
 
 ### `npm run unit`
 
-> Run unit tests in PhantomJS with [Karma](https://karma-runner.github.io/). See [Unit Testing](unit.md) for more details.
-
-- Supports ES2015+ in test files.
-- Supports all webpack loaders.
-- Easy [mock injection](http://vuejs.github.io/vue-loader/en/workflow/testing-with-mocks.html).
+> Run Unit tests with [Jest](https://facebook.github.io/jest/) 
+  - Supports ES2015+ in test files.
+  - Supports all webpack loaders.
 
 ### `npm run e2e`
 
-> Run end-to-end tests with [Nightwatch](http://nightwatchjs.org/). See [End-to-end Testing](e2e.md) for more details.
-
-- Run tests in multiple browsers in parallel.
-- Works with one command out of the box:
-  - Selenium and chromedriver dependencies automatically handled.
-  - Automatically spawns the Selenium server.
+> Runs End-to-end tests with [Jest](https://facebook.github.io/jest/) +  [Puppeteer](https://github.com/GoogleChrome/puppeteer).
