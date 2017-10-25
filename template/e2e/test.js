@@ -1,5 +1,5 @@
 const puppeteer = require('puppeteer');
-const pageUrl = 'http://www.localhost:8081/';
+const pageUrl = 'http://localhost:8080/';
 
 describe('My Page', () => {
   let browser = {};
